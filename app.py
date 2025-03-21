@@ -1,4 +1,4 @@
-import streamlit as st  # type: ignore
+import streamlit as st
 import pandas as pd  # type: ignore
 import os
 
@@ -17,7 +17,7 @@ with tab1:
         teamnumber = st.text_input("Team Number", placeholder="Enter Team Number")
         drivetrain = st.selectbox("Drivetrain", ["Swerve", "Mecanum", "Omni", "Tank"])
         # a select with other that can input text
-        coralfrom = st.selectbox("Coral From", ["Floor", "CS", "Needs lining Up"])
+        coralfrom = st.multiselect("Coral From", ["Floor", "CS", "Needs lining Up"])
         # row layout
         ccol1, ccol2, ccol3, ccol4 = st.columns(4)
         with ccol1:
@@ -29,6 +29,11 @@ with tab1:
         with ccol4:
             coralL4 = st.checkbox("Coral L4")
         # algea
+        preferred_coral = st.multiselect(
+            "Preferred Coral",
+            ["L1", "L2", "L3", "L4"],
+            help="Select the preferred coral levels",
+        )
         algae = st.multiselect("Algae", ["Remove", "Net", "Processor"])
         cage = st.selectbox("Cage", ["Deep", "Shallow", "Park", "None"])
         # multi select
@@ -41,7 +46,7 @@ with tab1:
         with btn2:
             reset = st.form_submit_button("Reset")
     if submitted:
-        if teamnumber and drivetrain and coralfrom and cage and hp:
+        if teamnumber and drivetrain and cage and hp:
             # header: Team Number,Drive Train,Coral From,Coral L1,Coral L2,Coral L3,Coral L4,Algae,Cage,Hp
             # Save to CSV
             data = {
@@ -52,6 +57,7 @@ with tab1:
                 "Coral L2": coralL2,
                 "Coral L3": coralL3,
                 "Coral L4": coralL4,
+                "Preferred Coral": preferred_coral,
                 "Algae": algae,
                 "Cage": cage,
                 "Human Player": hp,
@@ -75,8 +81,6 @@ with tab1:
                     f.write(image2.read())
             # check teamnumber in data
             if os.path.exists("data.csv"):
-                all_data = pd.read_csv("data.csv")
-                # set index to teamnumber
                 st.success("✅ Form submitted successfully!")
                 # reset form after submission
 
@@ -98,11 +102,16 @@ with tab2:
         st.dataframe(all_data)
 
         # Select team number to view images
+        opt = all_data.index
+        #sort the team numbers
+        opt_sorted = sorted(opt)
         selected_team = st.selectbox(
-            "Select Team Number to View Images", all_data.index
+            "Select Team Number to View Images", opt_sorted
         )
 
         if selected_team:
+            #show data
+            st.write(all_data.loc[selected_team])
             image1_path = f"images/{selected_team}/1.jpg"
             image2_path = f"images/{selected_team}/2.jpg"
 

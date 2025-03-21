@@ -1,10 +1,52 @@
-Team Number,Drive Train,Coral From,Coral L1,Coral L2,Coral L3,Coral L4,Algae,Cage,Hp
-8020,Swerve,CS,True,True,True,True,['Remove'],Deep,CS
-1111,Swerve,Floor,False,False,False,False,[],Deep,CS
-1111,Swerve,Floor,False,False,False,False,[],Deep,CS
-1111,Swerve,Floor,False,False,False,False,[],Deep,CS
-1111,Swerve,Floor,False,False,False,False,[],Deep,CS
-1111,Swerve,Floor,False,False,False,False,[],Deep,CS
-1111,Swerve,Floor,False,False,False,False,[],Deep,CS
-1111,Swerve,Floor,False,False,False,False,[],Deep,CS
-1111,Swerve,Floor,False,False,False,False,[],Deep,CS
+Team Number,Drive Train,Coral From,Coral L1,Coral L2,Coral L3,Coral L4,Preferred Coral,Algae,Cage,Hp
+8891,Swerve,['CS'],False,True,True,True,['L4'],"['Net', 'Processor', 'Remove']",Park,Both
+8891,Swerve,['CS'],False,True,True,True,['L4'],"['Net', 'Processor', 'Remove']",Park,Both
+812,Swerve,[],False,False,False,False,[],"['Remove', 'Processor']",Deep,Processor
+766,Swerve,['CS'],True,True,True,True,['L4'],"['Remove', 'Processor']",Deep,Must CS
+1538,Swerve,['Needs lining Up'],True,True,True,True,['L4'],"['Remove', 'Processor']",Deep,Must CS
+3128,Swerve,['CS'],True,True,True,True,"['L3', 'L4']","['Remove', 'Processor']",Deep,CS
+2827,Swerve,['CS'],True,True,True,True,['L4'],"['Remove', 'Processor']",Park,Both
+6995,Swerve,['CS'],True,True,True,True,['L4'],"['Remove', 'Processor', 'Net']",Deep,CS
+2984,Swerve,"['Floor', 'CS']",False,True,True,True,['L4'],"['Remove', 'Processor']",Park,Both
+9730,Swerve,['CS'],True,True,True,False,[],"['Remove', 'Processor']",Deep,CS
+2102,Swerve,['CS'],True,True,True,True,['L4'],"['Remove', 'Processor']",Deep,Must CS
+3341,Swerve,['CS'],True,True,True,True,['L4'],['Remove'],Deep,CS
+10586,Tank,['CS'],True,False,False,False,[],[],Park,Both
+3255,Swerve,['CS'],True,True,True,True,['L4'],"['Remove', 'Net', 'Processor']",Deep,Both
+7419,Swerve,['CS'],True,True,True,True,['L3'],"['Remove', 'Net', 'Processor']",Shallow,Both
+10392,Tank,['CS'],True,False,False,False,[],[],Park,Processor
+7441,Mecanum,['CS'],True,True,True,True,"['L2', 'L3', 'L4']","['Remove', 'Processor']",Park,CS
+3647,Swerve,['Floor'],True,True,True,True,"['L3', 'L4']",['Remove'],Deep,Both
+2485,Swerve,['CS'],True,True,True,True,['L4'],"['Remove', 'Net', 'Processor']",Deep,Both
+9084,Swerve,['CS'],True,True,True,True,['L4'],"['Remove', 'Net', 'Processor']",Deep,CS
+2543,Swerve,['CS'],True,True,True,True,['L4'],"['Remove', 'Processor']",Deep,Processor
+1572,Swerve,['Floor'],True,True,True,False,[],"['Remove', 'Processor']",Park,Must CS
+9452,Swerve,['Needs lining Up'],False,True,True,True,"['L2', 'L4']","['Remove', 'Net', 'Processor']",Deep,Both
+2658,Swerve,['CS'],True,True,True,True,['L4'],"['Remove', 'Net', 'Processor']",Deep,Both
+9573,Swerve,['CS'],True,True,True,True,"['L2', 'L3']","['Remove', 'Net', 'Processor']",Park,Both
+2710,Swerve,"['CS', 'Needs lining Up']",False,True,True,True,"['L3', 'L4']",['Remove'],Deep,CS
+8888,Swerve,['Needs lining Up'],True,False,False,False,[],['Processor'],Deep,Both
+10625,Tank,['CS'],True,True,True,False,['L3'],[],Deep,Must CS
+4738,Swerve,['CS'],True,True,True,True,['L4'],"['Remove', 'Net', 'Processor']",Deep,Must CS
+4919,Swerve,"['CS', 'Needs lining Up']",True,True,False,False,[],"['Remove', 'Processor']",Park,Both
+6885,Swerve,['CS'],True,True,True,True,"['L2', 'L3']",['Remove'],Park,Both
+8119,Swerve,"['CS', 'Needs lining Up']",True,True,True,True,"['L2', 'L3']","['Remove', 'Processor', 'Net']",Park,Both
+3704,Swerve,"['CS', 'Needs lining Up']",True,True,True,False,"['L2', 'L3']",['Remove'],Deep,Must CS
+4984,Swerve,['CS'],True,True,True,True,['L4'],"['Remove', 'Processor']",None,CS
+3749,Swerve,"['Floor', 'Needs lining Up']",True,True,True,True,['L4'],['Remove'],Deep,Processor
+5025,Swerve,['CS'],True,False,False,False,['L1'],[],Deep,CS
+3965,Swerve,['CS'],True,True,True,True,['L4'],['Remove'],Deep,CS
+10336,Mecanum,['Needs lining Up'],True,True,True,False,"['L2', 'L3']","['Processor', 'Remove']",Park,Both
+5137,Swerve,['Needs lining Up'],True,True,True,True,['L4'],"['Net', 'Remove', 'Processor']",Deep,Must CS
+4160,Swerve,['CS'],True,True,True,False,"['L2', 'L3']",['Remove'],Deep,Processor
+1622,Swerve,['Needs lining Up'],True,True,True,False,['L3'],"['Remove', 'Processor']",Park,Must CS
+2839,Swerve,['CS'],True,True,True,True,"['L2', 'L3']",[],Park,Must CS
+1972,Swerve,['Needs lining Up'],True,True,True,True,['L3'],[],Deep,Both
+5474,Swerve,['CS'],True,True,True,True,['L4'],"['Remove', 'Processor']",Shallow,CS
+6695,Swerve,['CS'],True,True,True,False,['L3'],[],Park,Both
+4276,Swerve,['CS'],True,True,True,False,['L3'],['Remove'],Deep,Both
+5514,Swerve,['CS'],True,True,True,False,"['L2', 'L3']","['Remove', 'Processor']",Shallow,CS
+8890,Tank,"['Floor', 'CS']",True,True,True,True,[],['Remove'],Park,Both
+4419,Swerve,['CS'],True,True,True,True,['L4'],[],Deep,CS
+6072,Swerve,['Needs lining Up'],True,True,True,True,['L4'],[],Deep,Both
+6515,Swerve,['Needs lining Up'],True,True,True,True,['L4'],['Remove'],Shallow,Both
